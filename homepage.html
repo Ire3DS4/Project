@@ -1,16 +1,15 @@
-#Homepage
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
 </head>
 <body>
-    <h4>Select an operation to perform on the datasets:</h4>
+    <h1 style="color:#40E0D0">Homepage</h1>
+    <h2>Choose an analytical operation to perform on the datasets:</h2>
     <ul>
         {% for val in range(registry|length) %}
-        <li><a href="./{{links[val]}}"><h5>{{registry[val]}}</h5></a></li>
+        <li><a href="./{{links[val]}}"><h3>{{registry[val]}}</h3></a></li>
         {% endfor %}
     </ul>
 </body>
