@@ -5,18 +5,30 @@
     <title>General Semantics</title>
 </head>
 <body>
-    <form action="http://127.0.0.1:8080">
-            <input type="submit" name="send" value="Homepage" />
-    </form>
+    <div class="btn-group" style="width:100%">
+		<button style="width:32%">
+			<form action="http://127.0.0.1:8080/MD">
+				<input type="submit" name="send" value="Go Back" />
+			</form></button>
+		<button style="width:32%">
+			<form action="http://127.0.0.1:8080/HP">
+				<input type="submit" name="send" value="Homepage" />
+			</form></button>
+		<button style="width:32%">
+			<form action="http://127.0.0.1:8080/RecG">
+				<input type="submit" name="send" value="Continue" />
+			</form></button>
+	</div>  
+    
     <h1>General Semantics</h1>
-    <p>The column names of the first dataset "disease_evidences.tsv" are: </p>
+    <p>The dataset "disease_evidences.tsv" is divided in 6 columns: </p>
     <ul>
         {% for el in result[0] %}
         <li>{{el}}</li>
         {% endfor %}
     </ul>
     <p></p>
-    <p>The column names of the second dataset "gene_evidences.tsv" are: </p>
+    <p>The dataset "gene_evidences.tsv" is divided in 6 columns: </p>
     <ul>
         {% for el in result[1] %}
         <li>{{el}}</li>
