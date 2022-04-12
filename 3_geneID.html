@@ -7,20 +7,20 @@
 <body>
 	<div class="btn-group" style="width:100%">
 		<button style="width:32%">
-			<form action="http://127.0.0.1:8080/Sem">
+			<form action="http://127.0.0.1:3000/Sem">
 				<input type="submit" name="send" value="Go Back" />
 			</form></button>
 		<button style="width:32%">
-			<form action="http://127.0.0.1:8080/HP">
+			<form action="http://127.0.0.1:3000/HP">
 				<input type="submit" name="send" value="Homepage" />
 			</form></button>
 		<button style="width:32%">
-			<form action="http://127.0.0.1:8080/RecD">
+			<form action="http://127.0.0.1:3000/RecD">
 				<input type="submit" name="send" value="Continue" />
 			</form></button>
 	</div>
-    	<h1>Gene IDs</h1>
-	<p>In ascending order, the gene IDs are:</p>	
+    	<h3>Gene IDs</h3>
+	<p>In ascending order, the gene IDs are: </p>	
     	<ul>
 		{% for el in result %}
 		<li>ID{{el}}</li>
