@@ -5,20 +5,21 @@
     <title>Gene Sentences</title>
 </head>
 <body>
-    <div class="btn-group" style="width:100%">
+	<div class="btn-group" style="width:100%">
 		<button style="width:30%">
-			<form action="http://127.0.0.1:8080/RecNum">
+			<form action="http://127.0.0.1:8080/RecG">
 				<input type="submit" name="send" value="Go Back" />
 			</form></button>
 		<button style="width:30%">
-			<form action="http://127.0.0.1:8080">
+			<form action="http://127.0.0.1:8080/HP">
 				<input type="submit" name="send" value="Homepage" />
 			</form></button>
 		<button style="width:30%">
-			<form action="http://127.0.0.1:8080/RecNum">
+			<form action="http://127.0.0.1:8080/RecD">
 				<input type="submit" name="send" value="Continue" />
 			</form></button>
-	  </div>
+	</div>
+  
     <ul>
     {% for sentence in result %}
     <li>{{sentence}}</li>
