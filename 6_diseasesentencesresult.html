@@ -5,7 +5,7 @@
     <title>Gene Sentences</title>
 </head>
 <body>
-  <div class="btn-group" style="width:100%">
+	<div class="btn-group" style="width:100%">
 		<button style="width:32%">
 			<form action="http://127.0.0.1:3000/RecD">
 				<input type="submit" name="send" value="Go Back" />
@@ -18,12 +18,12 @@
 			<form action="http://127.0.0.1:3000/Top10">
 				<input type="submit" name="send" value="Continue" />
 			</form></button>
-  </div>
-    <ul>
-    {% for sentence in result %}
-    <li>{{sentence}}</li>
-    <p></p>
-    {% endfor %}
-    </ul>
+	</div>
+	<ul>
+		{% for sentence in result %}
+		<li>{{sentence}}</li>
+		<p></p>
+		{% endfor %}
+	</ul>
 </body>
 </html>
