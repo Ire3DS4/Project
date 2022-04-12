@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Disease ID/Symbol</title>
+</head>
+<body>
+    <div class="btn-group" style="width:100%">
+        <button style="width:32%">
+            <form action="http://127.0.0.1:8080/GtoD">
+                <input type="submit" name="send" value="Go Back" />
+            </form></button>
+        <button style="width:32%">
+            <form action="http://127.0.0.1:8080/HP">
+                <input type="submit" name="send" value="Homepage" />
+            </form></button>
+        <button style="width:32%">
+            <form action="http://127.0.0.1:8080/MD">
+                <input type="submit" name="send" value="Continue" />
+            </form></button>
+    </div>  
+
+    <h3>List of genes associated with the given disease:<h3>
+    
+    <p></p>
+    
+    <ul>
+        
+        {%for gene in result%}
+    
+        <li>{{gene}}</li>
+        {%endfor%}
+        
+    </ul>
+
+
+</body>
+</html>
