@@ -5,7 +5,7 @@
     <title>Disease List</title>
 </head>
 <body>
-  <div class="btn-group" style="width:100%">
+	<div class="btn-group" style="width:100%">
 		<button style="width:32%">
 			<form action="http://127.0.0.1:3000/Top10">
 				<input type="submit" name="send" value="Go Back" />
@@ -15,16 +15,16 @@
 				<input type="submit" name="send" value="Homepage" />
 			</form></button>
 		<button style="width:32%">
-			<form action="http://127.0.0.1:3000/DtoG">
+			<form action="http://127.0.0.1:3000/DtoGUser">
 				<input type="submit" name="send" value="Continue" />
 			</form></button>
 	</div>
-    <h1>List of all diseases linked to gene {{gene}}:</h1>
-    <ul>
-        {%for el in result%}
-        <li>{{el}}</li>
-        {%endfor%}
-    </ul>
+	<h1>List of all diseases linked to gene {{gene}}:</h1>
+        <ul>
+		{%for el in result%}
+        	<li>{{el}}</li>
+        	{%endfor%}
+    	</ul>
 
 </body>
 </html>
