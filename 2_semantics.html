@@ -7,20 +7,20 @@
 <body>
     <div class="btn-group" style="width:100%">
 		<button style="width:32%">
-			<form action="http://127.0.0.1:8080/MD">
+			<form action="http://127.0.0.1:3000/MD">
 				<input type="submit" name="send" value="Go Back" />
 			</form></button>
 		<button style="width:32%">
-			<form action="http://127.0.0.1:8080/HP">
+			<form action="http://127.0.0.1:3000/HP">
 				<input type="submit" name="send" value="Homepage" />
 			</form></button>
 		<button style="width:32%">
-			<form action="http://127.0.0.1:8080/RecG">
+			<form action="http://127.0.0.1:3000/RecG">
 				<input type="submit" name="send" value="Continue" />
 			</form></button>
 	</div>  
     
-    <h1>General Semantics</h1>
+    <h3>General Semantics</h3>
     <p>The dataset "disease_evidences.tsv" is divided in 6 columns: </p>
     <ul>
         {% for el in result[0] %}
