@@ -6,10 +6,10 @@
 </head>
 <body>
     <h1 style="color:#40E0D0">Homepage</h1>
-    <h2>Choose an analytical operation to perform on the datasets:</h2>
+    <h3>Choose an analytical operation to perform on the datasets:</h3>
     <ul>
         {% for val in range(registry|length) %}
-        <li><a href="./{{links[val]}}"><h3>{{registry[val]}}</h3></a></li>
+        <li><a href="./{{links[val]}}"><h4>{{registry[val]}}</h4></a></li>
         {% endfor %}
     </ul>
 </body>
