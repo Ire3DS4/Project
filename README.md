@@ -43,6 +43,3 @@ UML_diagram.PNG is:
 .tsv files are the two databases the operations work on, respectively:
 - disease_evidences.tsv also known as df1 in the code
 - gene_evidences.tsv also know as df2 in the code
-
-
-[Project-main.zip](https://github.com/Ire3DS4/Project/files/8481621/Project-main.zip)
