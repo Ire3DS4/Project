@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    	<title>Gene IDs</title>
+</head>
+<body>
+	<div class="btn-group" style="width:100%">
+		<button style="width:32%">
+			<form action="http://127.0.0.1:3000/ListGUser">
+				<input type="submit" name="send" value="Go Back" />
+			</form>
+    		</button>
+		<button style="width:32%">
+			<form action="http://127.0.0.1:3000">
+        			<input type="submit" name="send" value="Homepage" />
+      			</form>
+   		</button>
+    		<button style="width:32%">
+      			<form action="http://127.0.0.1:3000/ListDUser">
+        			<input type="submit" name="send" value="Continue" />
+      			</form>
+    		</button>
+	</div>
+	
+	<h3>Disease IDs</h3>
+	<p>In ascending order, the disease IDs are:</p>	
+    	<ul>
+		{% for el in result %}
+      		<li>{{el}}</li>
+      		{% endfor %}
+	</ul>
+</body>
+</html>
