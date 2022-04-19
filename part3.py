@@ -61,7 +61,7 @@ def user_page3():
 @app.route('/GtoD')  # 2.8
 def page8():
     res = CentralRegistry().link_diseases_from_genes().associate(request.args.get('gene'))
-    return render_template('8_genetodiseasesresult.html', result = res, gene = request.args.get('gene'))      
+    return render_template('8_genetodiseasesresult.html', result = res)      
 
 @app.route('/DtoGUser')  # 2.9 - user input
 def user_page4():
@@ -70,7 +70,7 @@ def user_page4():
 @app.route('/DtoG')  # 2.9
 def page9():
     res = CentralRegistry().link_genes_from_diseases().associate(request.args.get('disease'))
-    return render_template('9_diseasetogenesresult.html', result = res, disease = request.args.get('disease'))
+    return render_template('9_diseasetogenesresult.html', result = res)
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=3000)
