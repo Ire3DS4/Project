@@ -5,15 +5,15 @@ class CentralRegistry:
     def __init__(self):  
         self.__data1 = pd.read_csv('disease_evidences.tsv', delimiter="\t")
         self.__data2 = pd.read_csv('gene_evidences.tsv', delimiter="\t")
-        self.__operations = ['Numerical metadata',
-                             'General semantics',
-                             'List of gene IDs',
-                             'List of sentences given gene symbol/ID related to COVID-19',
-                             'List of diseases',
-                             'List of sentences given disease name/ID related to COVID-19',
-                             'Top 10 genes-diseases associations',
-                             'Disease list given gene symbol/ID',
-                             'Gene list given disease name/ID']
+        self.__operations = ['Record the numerical metadata: number of row and columns',
+                             'Record the general semantics: the labels of the columns',
+                             'Record the number of different genes in a list',
+                             'Record the number of different diseases in a list',
+                             'Provide the list of sentences in association with COVID-19 given gene symbol/ID',
+                             'Provide the list of sentences in association with COVID-19 given disease name/ID',
+                             'Record the top 10 associations between genes and diseases',
+                             'Provide the list of associated diseases given gene symbol/ID',
+                             'Provide the list of associated genes given disease name/ID']
         self.__links = ['MD', 'Sem', 'RecG', 'ListGUser', 'RecD', 'ListDUser', 'Top10', 'GtoDUser', 'DtoGUser']
 
     def returnregistry(self):  # needed for HTML homepage
